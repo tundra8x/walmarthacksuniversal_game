@@ -66,13 +66,23 @@ local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
 
 -- Windows
 
-local hacks = Library:CreateWindow({
-	Title = 'walmart hacks lul v0.1| universal | non-backdoor',
-	Center = true,
-	AutoShow = true,
-	TabPadding = 8,
-	MenuFadeTime = 0.2
-})
+if game.PlaceId == 2753915549 then
+	local hacks = Library:CreateWindow({
+		Title = 'walmart hacks lul v0.1| blox fruits | non-backdoor',
+		Center = true,
+		AutoShow = true,
+		TabPadding = 8,
+		MenuFadeTime = 0.2
+	})
+else
+	local hacks = Library:CreateWindow({
+		Title = 'walmart hacks lul v0.1| unknown game | non-backdoor',
+		Center = true,
+		AutoShow = true,
+		TabPadding = 8,
+		MenuFadeTime = 0.2
+	})
+end
 
 -- Tabs
 
