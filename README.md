@@ -48,7 +48,7 @@ end
 
 local function LoadBloxFruitsScript()
 	Library:Unload()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))();
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
 end
 
 local function LoadDesSimulatorScript()
