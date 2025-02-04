@@ -67,7 +67,7 @@ local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
 -- Windows
 
 local hacks = Library:CreateWindow({
-	Title = 'walmart hacks lul | universal',
+	Title = 'walmart hacks lul v0.1| universal | non-backdoor',
 	Center = true,
 	AutoShow = true,
 	TabPadding = 8,
