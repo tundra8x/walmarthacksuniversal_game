@@ -48,7 +48,7 @@ end
 
 local function LoadBloxFruitsScript()
 	Library:Unload()
-	loadstring(game:HttpGetAsync("https://cdn.robloxscripts.gg/public/furky/furky-rubu-roblox-blox-fruits-source.lua"), true);
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))();
 end
 
 local function LoadDesSimulatorScript()
