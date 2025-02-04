@@ -64,25 +64,25 @@ local Library = loadstring(game:HttpGet(repo .. 'Library.lua'))()
 local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))()
 local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
 
+-- Something
+
+local MarketplaceService = game:GetService("MarketplaceService")
+local PlaceID = game.PlaceId  -- Automatically gets the current place ID
+
+local success, info = pcall(function()
+    return MarketplaceService:GetProductInfo(PlaceID, Enum.InfoType.Asset)
+end)
+
 -- Windows
 
-if game.PlaceId == 2753915549 then
-	local hacks = Library:CreateWindow({
-		Title = 'walmart hacks lul v0.1| blox fruits | non-backdoor',
-		Center = true,
-		AutoShow = true,
-		TabPadding = 8,
-		MenuFadeTime = 0.2
-	})
-else
-	local hacks = Library:CreateWindow({
-		Title = 'walmart hacks lul v0.1| unknown game | non-backdoor',
-		Center = true,
-		AutoShow = true,
-		TabPadding = 8,
-		MenuFadeTime = 0.2
-	})
-end
+local hacks = Library:CreateWindow({
+	Title = 'walmart hacks lul v0.1 | '..info.Name..' | non-backdoor',
+	Center = true,
+	AutoShow = true,
+	TabPadding = 8,
+	MenuFadeTime = 0.2
+})
+
 
 -- Tabs
 
